@@ -150,12 +150,12 @@ function getCurrentImage(i) {
         // tăng hoặc giảm thứ tự hình
     if (i == 0) {
         currentImage--
-        displayImgShow.src = `./image/${currentImage}.JPG`
-        mainPicture.src = `./image/${currentImage}.JPG`
+        displayImgShow.src = `./image/${currentImage}.jpg`
+        mainPicture.src = `./image/${currentImage}.jpg`
     } else if (i == 1) {
         currentImage++
-        displayImgShow.src = `./image/${currentImage}.JPG`
-        mainPicture.src = `./image/${currentImage}.JPG`
+        displayImgShow.src = `./image/${currentImage}.jpg`
+        mainPicture.src = `./image/${currentImage}.jpg`
     }
     //check lại
     checkCurrentImg()
