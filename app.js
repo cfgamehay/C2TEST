@@ -59,7 +59,7 @@ var sliced;
 function setUpImg() {
     let index = 0
     imgs.forEach(e => {
-        e.src = `./image/${index}.JPG`
+        e.src = `./image/${index}.jpg`
         index++
     })
 }
@@ -78,7 +78,7 @@ function renderImg() {
         nextBtn.classList.remove('preventActive')
     }
     for (i = 0; i < imgs.length; i++) {
-        imgs[i].src = `./image/${sliced[i]}.JPG`
+        imgs[i].src = `./image/${sliced[i]}.jpg`
     }
 }
 renderImg()
