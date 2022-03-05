@@ -133,16 +133,16 @@ function closeImg(e) {
         displayImg.style.display = 'none'
     }
 }
-console.log(typeof(+displayImgShow.src.slice(28, 30)))
+// console.log(typeof(+displayImgShow.src.slice(28, 30)))
 var currentImage;
 
 function getCurrentImage(i) {
     //lấy số của hình
-    if (displayImgShow.src.slice(28, 30) == displayImgShow.src.slice(28, 29) + '.') {
-        currentImage = +displayImgShow.src.slice(28, 29) //xử lý nếu như hình đi từ 0 đến 10
+    if (displayImgShow.src.slice(41, 43) == displayImgShow.src.slice(41, 42) + '.') {
+        currentImage = +displayImgShow.src.slice(41, 42) //xử lý nếu như hình đi từ 0 đến 10
 
     } else {
-        currentImage = +displayImgShow.src.slice(28, 30) //xử lý nếu như hình đi từ 10 đến 99
+        currentImage = +displayImgShow.src.slice(41, 43) //xử lý nếu như hình đi từ 10 đến 99
 
     }
     //ẩn thanh di chuyển hếu hình = 0 || hình == ảnh cuối
